@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.login {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  height: 100vh;
+  background-image: url('../../assets/login.jpg');
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
