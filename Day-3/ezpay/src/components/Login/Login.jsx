@@ -1,28 +1,40 @@
-import { useEffect, useState } from "react";
-import "./Login.css"
-import Footer from "../Footer/Footer";
+import { NavLink } from "react-router-dom";
+import "./Login.css";
 
 const Login = () => {
-  const [showFooter, setShowFooter] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY > 0;
-      setShowFooter(scrolled);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
-    <div>
-      <div className="login">
-        Login
-      </div>
-      {showFooter && <Footer />}
+    <div className="login-container">
+      <section className="login-section">
+        <div className="login">
+          <p className="add">
+            Manage your Mobile Recharge with the ezPay app
+          </p>
+          <ul className="recharge-options">
+            <li>Postpaid</li>
+            <li>Prepaid</li>
+            <li>Addons</li>
+            <li>Others</li>
+          </ul>
+          <div className="container">
+            <div className="welcome">
+              <h1>Welcome to ezPay</h1>
+              <h4>Log in to unlock a world of digital experiences.</h4>
+              <form className="login-form">
+                <label htmlFor="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]*" maxLength="10" required />
+                <label htmlFor="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+                <button type="submit">Login</button>
+              </form>
+              <p className="register-link">
+                Dont have an account? <NavLink to="/register">Register here</NavLink>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

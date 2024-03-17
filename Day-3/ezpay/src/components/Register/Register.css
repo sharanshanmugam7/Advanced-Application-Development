@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.login {
+.register {
   font-family: 'Raleway', sans-serif;
   display: flex;
   height:100vh;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.container {
+.r-container {
   position: absolute;
   top: 59%;
   left: 75%; 
@@ -22,14 +22,14 @@
   backdrop-filter: blur(4px); 
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.521); 
 }
-.welcome {
+.r-welcome {
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 60px 0;
   color: #77ff77;
 }
-.welcome h1{
+.r-welcome h1{
   font-size: 45px ;
   text-align: center;
   background: linear-gradient(to right, #4abc68, #77ff77);
@@ -37,35 +37,35 @@
   -webkit-text-fill-color: transparent;
 
 }
-.welcome h4{
+.r-welcome h4{
   font-size: 15px;
   font-weight:400;
   line-height: 50px;
   text-align: center;
   letter-spacing: 1px;
 }
-.login-form {
+.register-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.login-form label {
+.register-form label {
   text-align: left;
   width: 80%;
   margin: 15px;
   color: white;
 }
-.login-form input {
+.register-form input {
   width: 80%;
   padding-top: 10px;
   border: none;
   border-bottom: 1px solid rgb(0, 0, 0);
   background-color: transparent;
   outline: none;
-  color: white;
+  color:rgb(189, 254, 254);
   font-size: 20px;
 }
-.login-form button {
+.register-form button {
   width: 60%;
   margin: 20px;
   padding: 12px;
@@ -80,15 +80,15 @@
   transition: background-color 0.8s;
 }
 
-.login-form button:hover {
+.register-form button:hover {
   background: radial-gradient(circle at -1% 57.5%, rgb(0, 102, 43) 0%, rgb(0, 102, 43) 90%);
   background-color: #295F2D;
 }
 
-.login-form input:hover {
+.register-form input:hover {
   border-bottom: 3px solid #8BD8BD;
 }
-.add {
+.addr {
   width: 650px;
   line-height: 58px;
   background: linear-gradient(to right, #7cff9f, #77ff77);
@@ -102,16 +102,16 @@
   left: 110px;
   top: 28%;
 }
-.recharge-options {
+.recharge-options-r {
   list-style: none;
   padding: 0;
   margin: 0;
   position: absolute;
-  top: calc(43% + 70px);
-  left: 160px;
+  top: calc(43% + 70px); /* Adjust this value as needed */
+  left: 160px; /* Adjust this value as needed */
 }
 
-.recharge-options li {
+.recharge-options-r li {
   font-size: 25px;
   font-weight: 660;
   margin-bottom: 40px;
@@ -119,22 +119,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.recharge-options-r li::before {
+  content: "\2713"; 
+  color: #4CAF50; 
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin-right: 10px;
+}
 
-.recharge-options li:last-child {
+.recharge-options-r li:last-child {
   margin-bottom: 0;
-}
-.register-link {
-  text-align: center;
-  margin-top: 20px;
-  color: #77ff77;
-}
-
-.register-link a {
-  color: #77ff77;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.register-link a:hover {
-  text-decoration: underline;
 }

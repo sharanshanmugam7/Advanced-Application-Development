@@ -16,9 +16,11 @@
     font-family: 'Raleway' ;
     font-style: italic;
     margin-left: 80px;
+    position: relative;
 }
 .logo a {
     text-decoration: none;
-    color: #FFE67C;
-    
+    background: radial-gradient(circle at -1% 57.5%, rgb(40, 205, 109) 0%, rgb(39, 182, 170) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
   }
