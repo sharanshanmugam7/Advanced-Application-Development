@@ -1,0 +1,74 @@
+.dash {
+    height: 100vh;
+    background-image: url('../../assets/home.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    position: relative;
+    display: flex;
+}
+
+.user-details {
+    width: 27%;
+    padding: 5px;
+    height: 64%;
+    margin-left: 2%;
+    margin-top: 70px;
+    background: rgba(0, 0, 0, 0.497);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+.user-details h2{
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 30px;
+    text-align: center;
+}
+.user-details p {
+    margin-bottom: 10px; 
+    margin-top: 30px;
+    font-size:large;
+    font-weight: 200;
+    margin-left: 50px;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+.payment-history {
+    width: 65%;
+    height: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 70px;
+    margin-left: auto;
+}
+
+.payment-history h2 {
+    margin-bottom: 20px;
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.payment-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.payment-history th, .payment-history td {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    text-align: left;
+}
+
+.payment-history th {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.payment-history tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,77 @@
+.postpaid
+{
+    height: 100vh;
+    background-image: url('../../assets/home.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    position: relative;
+    
+}
+  
+  .glassc {
+    position: absolute;
+    top: -30px;
+    left: -60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 80px;
+  }
+  
+  .addons-glass {
+    width: 300px;
+    height: 65px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    transition: background-color 0.8s ease;
+    transition: transform 0.7s ease;
+  }
+ 
+  .addons-glass:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transform: scale(1.1);
+  }
+  
+  .glassc h3 {
+    margin: 35px;
+    
+  }
+  .plan-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 70%; 
+    z-index: 1;
+  }
+  
+  .plan-details .plan-glass {
+    width:300px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    transition: background-color 0.8s ease;
+    transition: transform 0.7s ease;
+  }
+  .plan-glass:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transform: scale(1.1);
+  }
+  
